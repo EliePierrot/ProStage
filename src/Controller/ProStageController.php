@@ -6,17 +6,18 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-/**
-     * @Route("/", name="pro_stage_accueil")
-     */
+
 
 class ProStageController extends AbstractController
 {
-
+   /**
+       * @Route("/", name="pro_stage_accueil")
+       */
     public function index(): Response
     {
         return $this->render('pro_stage/index.html.twig', [
             'controller_name' => 'ProStageController',
         ]);
     }
+
 }
